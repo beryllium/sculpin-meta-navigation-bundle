@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="sculpin_meta_navigation.generator" class="Janbuecker\Sculpin\Bundle\MetaNavigationBundle\MenuGenerator">
+        <service id="sculpin_meta_navigation.generator" class="Janbuecker\Sculpin\Bundle\MetaNavigationBundle\MenuGenerator" public="true">
             <argument type="service" id="sculpin.source_permalink_factory" />
             <tag name="kernel.event_subscriber" />
         </service>
